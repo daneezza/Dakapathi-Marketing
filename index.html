@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dakapathi - Your Tax Solution</title>
+    <link rel="icon" href="./images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container nav">
+            <div class="logo"><img src="./images/logo.png" alt="Dakapathi Logo" class="logo"></div>
+            <div class="language-selector">
+                <button onclick="changeLanguage('si')" class="lang-btn">සිංහල</button>
+                <button onclick="changeLanguage('ta')" class="lang-btn">தமிழ்</button>
+                <button onclick="changeLanguage('en')" class="lang-btn">English</button>
+            </div>
+            <div class="nav-links">
+                <a href="#top" data-si="මුල් පිටුව" data-ta="முகப்பு" data-en="Home">Home</a>
+                <a href="#features" data-si="විශේෂාංග" data-ta="அம்சங்கள்" data-en="Features">Features</a>
+                <a href="#pricing" data-si="මිල ගණන්" data-ta="விலை" data-en="Pricing">Pricing</a>
+                <a href="#team" data-si="අපගේ කණ්ඩායම" data-ta="குழு" data-en="Our Team">Our Team</a>
+                <a href="#contact" data-si="සම්බන්ධ වන්න" data-ta="தொடர்பு" data-en="Contact">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1 data-si="ඔබේ බදු ගෙවීම සරල කරන්න" data-ta="உங்கள் வரி தாக்கல் எளிதாக்குங்கள்" data-en="Simplify Your Tax Filing">Simplify Your Tax Filing</h1>
+                <p data-si="පුද්ගලයින් සහ ව්‍යාපාර සඳහා වේගවත්, නිවැරදි සහ ආරක්ෂිත බදු සැකසුම් මෘදුකාංගය" data-ta="தனிநபர்கள் மற்றும் வணிகங்களுக்கான வேகமான, துல்லியமான மற்றும் பாதுகாப்பான வரி தயாரிப்பு மென்பொருள்" data-en="Fast, accurate, and secure tax preparation software for individuals and businesses">Fast, accurate, and secure tax preparation software for individuals and businesses</p>
+                <button class="cta-button" data-si="නොමිලේ ආරම්භ කරන්න" data-ta="இலவசமாக தொடங்குங்கள்" data-en="Get Started Free" onclick="window.location.href='comingsoon.html'">Get Started Free</button>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features" id="features">
+            <div class="container">
+                <h2 data-si="අපගේ විශේෂාංග" data-ta="எங்கள் அம்சங்கள்" data-en="Our Features">Our Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-calculator"></i>
+                        <h3 data-si="නිවැරදි ගණනය කිරීම්" data-ta="ஸ்மார்ட் கணக்கீடுகள்" data-en="Smart Calculations">Smart Calculations</h3>
+                        <p data-si="ඔබේ ආපසු ගෙවීම උපරිම කිරීමට ස්වයංක්‍රීය ගණනය කිරීම් සහ අඩු කිරීම්" data-ta="உங்கள் வருமானத்தை அதிகரிக்க தானியங்கி கணக்கீடுகள் மற்றும் கழிவுகள்" data-en="Automated calculations and deductions to maximize your return">Automated calculations and deductions to maximize your return</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-headset"></i>
+                        <h3 data-si="24/7 සහාය" data-ta="24/7 ஆதரவு" data-en="24/7 Support">24/7 Support</h3>
+                        <p data-si="ඔබට උදව් කිරීමට විශේෂඥ බදු උපදේශකයින් සෑම විටම සිටී" data-ta="உங்களுக்கு உதவ நிபுணர் வரி ஆலோசகர்கள் 24 மணி நேரமும் உள்ளனர்" data-en="Expert tax advisors available around the clock to help you">Expert tax advisors available around the clock to help you</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3 data-si="ජංගම ගොනු කිරීම" data-ta="மொபைல் தாக்கல்" data-en="Mobile Filing">Mobile Filing</h3>
+                        <p data-si="අපගේ ප්‍රතිචාරාත්මක වේදිකාව සමඟ ඕනෑම උපාංගයක බදු ගොනු කරන්න" data-ta="எங்கள் திறன்மிக்க தளத்துடன் எந்த சாதனத்திலும் வரி தாக்கல் செய்யுங்கள்" data-en="File your taxes on any device with our responsive platform">File your taxes on any device with our responsive platform</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3 data-si="ආරක්ෂිත ගොනු කිරීම" data-ta="பாதுகாப்பான தாக்கல்" data-en="Secure Filing">Secure Filing</h3>
+                        <p data-si="ඔබේ සංවේදී තොරතුරු ආරක්ෂා කිරීමට බැංකු මට්ටමේ සංකේතනය" data-ta="உங்கள் உணர்திறன் தகவல்களைப் பாதுகாக்க வங்கி-நிலை குறியாக்கம்" data-en="Bank-level encryption to protect your sensitive information">Bank-level encryption to protect your sensitive information</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-bolt"></i>
+                        <h3 data-si="වේගවත් සැකසුම" data-ta="வேகமான செயலாக்கம்" data-en="Fast Processing">Fast Processing</h3>
+                        <p data-si="අපගේ සරල පද්ධතිය සමඟ මිනිත්තු කිහිපයකින් ඔබේ බදු සම්පූර්ණ කරන්න" data-ta="எங்கள் எளிமையான அமைப்புடன் நிமிடங்களில் உங்கள் வரிகளை முடிக்கவும்" data-en="Complete your taxes in minutes with our streamlined system">Complete your taxes in minutes with our streamlined system</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-check-circle"></i>
+                        <h3 data-si="නිරවද්‍යතා ඇපය" data-ta="துல்லியத்தன்மை உத்தரவாதம்" data-en="Accuracy Guarantee">Accuracy Guarantee</h3>
+                        <p data-si="100% නිරවද්‍යතාවය සහතික වේ, නැතහොත් අපි දඩ ගෙවන්නෙමු" data-ta="100% துல்லியத்தன்மை உத்தரவாதம் அல்லது நாங்கள் அபராதங்களை செலுத்துவோம்" data-en="100% accuracy guaranteed or we'll pay the penalties">100% accuracy guaranteed or we'll pay the penalties</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing" id="pricing">
+            <div class="container">
+                <h2 data-si="අපගේ මිල සැලසුම්" data-ta="எங்கள் விலை திட்டங்கள்" data-en="Our Pricing Plans">Our Pricing Plans</h2>
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <h3 data-si="නොමිලේ" data-ta="இலவசம்" data-en="Free">Free</h3>
+                        <div class="price">Rs.0<span data-si="/මාසය" data-ta="/மாதம்" data-en="/month">/month</span></div>
+                        <ul class="features">
+                            <li><i class="fas fa-check"></i> <span data-si="බදු ගණක යන්ත්‍රය" data-ta="வரி கணிப்பான்" data-en="Tax Calculator">Tax Calculator</span></li>
+                            <li><i class="fas fa-check"></i> <span data-si="තනි ආදායම් මූලාශ්‍රය" data-ta="ஒற்றை வருமான மூலம்" data-en="Single Income Source">Single Income Source</span></li>
+                            <li><i class="fas fa-check"></i> <span data-si="විද්‍යුත් තැපැල් සහාය" data-ta="மின்னஞ்சல் ஆதரவு" data-en="Email Support">Email Support</span></li>
+                            <li><i class="fas fa-check"></i> <span data-si="මූලික වාර්තා" data-ta="அடிப்படை அறிக்கைகள்" data-en="Basic Reports">Basic Reports</span></li>
+                            <li><i class="fas fa-check"></i> <span data-si="සීමිත ආදායම් නිරීක්ෂණය" data-ta="வரையறுக்கப்பட்ட வருமான கண்காணிப்பு" data-en="Limited Income Tracking">Limited Income Tracking</span></li>
+                        </ul>
+                        <button class="btn" data-si="ආරම්භ කරන්න" data-ta="தொடங்குங்கள்" data-en="Get Started" onclick="window.location.href='comingsoon.html'">Get Started</button>
+                    </div>
+                    <div class="pricing-card popular">
+                        <div class="popular-badge" data-si="වඩාත් ජනප්‍රිය" data-ta="மிகவும் பிரபலமானது" data-en="Most Popular">Most Popular</div>
+                        <h3 data-si="මූලික" data-ta="அடிப்படை" data-en="Basic">Basic</h3>
+                        <div class="price">Rs.250<span data-si="/මාසය" data-ta="/மாதம்" data-en="/month">/month</span></div>
+                        <ul class="features">
+                            <li><i class="fas fa-check"></i> <span data-si="බදු ගණක යන්ත්‍රය" data-ta="வரி கணிப்பான்" data-en="Tax Calculator">Tax Calculator</span></li>
+                            <li><i class="fas fa-check"></i> <span data-si="බහු ආදායම් මූලාශ්‍ර" data-ta="பல வருமான மூலங்கள்" data-en="Multiple Income Sources">Multiple Income Sources</span></li>
+                            <li><i class="fas fa-check"></i> <span data-si="ප්‍රමුඛතා සහාය" data-ta="முன்னுரிமை ஆதரவு" data-en="Priority Support">Priority Support</span></li>
+                            <li><i class="fas fa-check"></i> <span data-si="විස්තරාත්මක වාර්තා" data-ta="விரிவான அறிக்கைகள்" data-en="Detailed Reports">Detailed Reports</span></li>
+                            <li><i class="fas fa-check"></i> <span data-si="අසීමිත ආදායම් නිරීක්ෂණය" data-ta="வரம்பற்ற வருமான கண்காணிப்பு" data-en="Unlimited Income Tracking">Unlimited Income Tracking</span></li>
+                        </ul>
+                        <button class="btn" data-si="ආරම්භ කරන්න" data-ta="தொடங்குங்கள்" data-en="Get Started" onclick="window.location.href='comingsoon.html'">Get Started</button>
+                    </div>
+                    <div class="pricing-card">
+                        <h3 data-si="වාරිකය" data-ta="பிரீமியம்" data-en="Premium">Premium</h3>
+                        <div class="price">Rs.500<span data-si="/මාසය" data-ta="/மாதம்" data-en="/month">/month</span></div>
+                        <ul class="features">
+                            <li><i class="fas fa-check"></i> <span data-si="සම්පූර්ණ බදු කළමනාකරණය" data-ta="முழுமையான வரி மேலாண்மை" data-en="Complete Tax Management">Complete Tax Management</span></li>
+                            <li><i class="fas fa-check"></i> <span data-si="අසීමිත ආදායම් මූලාශ්‍ර" data-ta="வரம்பற்ற வருமான மூலங்கள்" data-en="Unlimited Income Sources">Unlimited Income Sources</span></li>
+                            <li><i class="fas fa-check"></i> <span data-si="24/7 වාරික සහාය" data-ta="24/7 பிரீமியம் ஆதரவு" data-en="24/7 Premium Support">24/7 Premium Support</span></li>
+                            <li><i class="fas fa-check"></i> <span data-si="අභිරුචි වාර්තා" data-ta="தனிப்பயன் அறிக்கைகள்" data-en="Custom Reports">Custom Reports</span></li>
+                            <li><i class="fas fa-check"></i> <span data-si="උසස් විශ්ලේෂණ" data-ta="மேம்பட்ட பகுப்பாய்வு" data-en="Advanced Analytics">Advanced Analytics</span></li>
+                            <li><i class="fas fa-check"></i> <span data-si="දැන්වීම් රහිත භාවිතය" data-ta="விளம்பரம் இல்லாத பதிப்பு" data-en="Ad-free version">Ad-free version</span></li>
+                            <li><i class="fas fa-check"></i> <span data-si="AI කථන උපාංගය" data-ta="AI சாட்போட்" data-en="AI Chatbot">AI Chatbot</span></li>
+                        </ul>
+                        <button class="btn" data-si="ආරම්භ කරන්න" data-ta="தொடங்குங்கள்" data-en="Get Started" onclick="window.location.href='comingsoon.html'">Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="team" id="team">
+            <div class="container">
+                <h2 data-si="අපගේ සංවර්ධන කණ්ඩායම හමුවන්න" data-ta="எங்கள் மேம்பாட்டு குழுவை சந்திக்கவும்" data-en="Meet Our Development Team">Meet Our Development Team</h2>
+                <div class="team-grid">
+                    
+                    <div class="team-card">
+                        <img src="images/developer/developer01.jpg" alt="Developer 1" class="team-image">
+                        <div class="team-info">
+                            <h3 data-en="Daneesha Hansaka">Daneesha Hansaka</h3>
+                            <p data-en="UI/UX Designer">UI/UX Designer</p>
+                            <div class="social-links">
+                                <a href="https://github.com/daneezza" class="social-link"><i class="fab fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/daneezza/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://www.instagram.com/daneezza/" class="social-link"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <img src="images/developer/developer02.jpg" alt="Developer 2" class="team-image">
+                        <div class="team-info">
+                            <h3  data-en="Inam Irshad">Inam Irshad</h3>
+                            <p  data-en="Backend Developer">Backend Developer</p>
+                            <div class="social-links">
+                                <a href="https://github.com/ItsInam" class="social-link"><i class="fab fa-github"></i></a>
+                                <a href="http://www.linkedin.com/in/inam-irshad" class="social-link"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://www.instagram.com/_.its_inam.__" class="social-link"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <img src="images/developer/developer03.jpg" alt="Developer 4" class="team-image">
+                        <div class="team-info">
+                            <h3 data-en="Stephan Perera">Stephan Perera</h3>
+                            <p  data-en="Frontend Developer">Frontend Developer</p>
+                            <div class="social-links">
+                                <a href="https://github.com/Stephanperera04" class="social-link"><i class="fab fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/stephan-perera-8a202a241" class="social-link"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://www.instagram.com/stephan_theekshana" class="social-link"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <img src="images/developer/developer04.jpg" alt="Developer 5" class="team-image">
+                        <div class="team-info">
+                            <h3 data-en="Methuni Mallikaratchy">Methuni Mallikaratchy</h3>
+                            <p  data-en="Backend Developer">Backend Developer</p>
+                            <div class="social-links">
+                                <a href="https://github.com/Methu04" class="social-link"><i class="fab fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/methuni-mallikaratchy-16045133b" class="social-link"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://www.instagram.com/methuuuu_ni/" class="social-link"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <img src="images/developer/developer05.jpg" alt="Developer 3" class="team-image">
+                        <div class="team-info">
+                            <h3  data-en="Nethsasa Manawadu">Nethsasa Manawadu</h3>
+                            <p  data-en="Backend Developer">Backend Developer</p>
+                            <div class="social-links">
+                                <a href="https://github.com/nethasa-manawadu" class="social-link"><i class="fab fa-github"></i></a>
+                                <a href="http://www.linkedin.com/in/nethasa-manawadu-7041832a7" class="social-link"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://www.instagram.com/nethasa_m/" class="social-link"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="contact-section">
+                    <h3 data-si="අප අමතන්න" data-ta="எங்களை தொடர்பு கொள்ளவும்" data-en="Contact Us">Contact Us</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i>Colombo, Sri Lanka</p>
+                        <p><i class="fas fa-phone"></i> +94 719745537</p>
+                        <p><i class="fas fa-envelope"></i> dakapathiofficial@gmail.com</p>
+                        <a href="https://www.instagram.com/dakapathi.official/" style="text-decoration: none;"><p><i class="fab fa-instagram"></i> dakapathi.official</p></a>
+                    </div>
+                </div>
+                <div class="contact-section">
+                    <h3 data-si="අපට පණිවිඩයක් යවන්න" data-ta="எங்களுக்கு செய்தி அனுப்புங்கள்" data-en="Send us a Message">Send us a Message</h3>
+                    <form class="contact-form" action="mailto:dakapathiofficial@gmail.com" method="post" enctype="text/plain">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                        <button type="submit" data-si="පණිවිඩය යවන්න" data-ta="செய்தி அனுப்பு" data-en="Send Message">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p data-si="© 2024 Dakapathi. සියලුම හිමිකම් ඇවිරිණි." data-ta="© 2024 Dakapathi. அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை." data-en="© 2024 Dakapathi. All rights reserved.">&copy; 2024 Dakapathi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function changeLanguage(lang) {
+            document.querySelectorAll('[data-' + lang + ']').forEach(element => {
+                element.textContent = element.getAttribute('data-' + lang);
+            });
+        }
+    </script>
+</body>
+</html>

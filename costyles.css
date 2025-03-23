@@ -1,0 +1,147 @@
+/* Coming Soon Page Styles */
+
+* {
+    font-family: 'Poppins', sans-serif;
+    /* Add scrollbar styling */
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+body {
+    background-color: #00ff87;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+*::-webkit-scrollbar {
+    display: none;
+}
+
+.coming-soon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #121212, #1f1f1f);
+    color: #ffffff;
+    transition: background 0.5s ease; /* Added transition for smooth background change */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Added shadow for depth */
+}
+
+.coming-soon-container img {
+    width: 190px;
+    height: 170px;
+}
+.coming-soon-container h1 {
+    margin-top: 10px;
+    font-size: 3.5rem; /* Increased font size for more impact */
+    margin-bottom: 30px; /* Increased margin for better spacing */
+    background: linear-gradient(45deg, #ffffff, #00ff87, #60efff); /* Added a new color to the gradient */
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 10s ease infinite; /* Slowed down the animation for a smoother effect */
+    background-size: 300% 300%; /* Increased background size for a more dynamic effect */
+    letter-spacing: 3px; /* Increased letter spacing for a more airy feel */
+    padding: 10px; /* Added padding for better text presentation */
+    border-radius: 10px; /* Added rounded corners for a softer look */
+    transition: transform 0.3s ease; /* Added transition for hover effect */
+}
+
+.coming-soon-container h1:hover {
+    transform: scale(1.05); /* Added hover effect to slightly enlarge the text */
+}
+
+.coming-soon-container p {
+    font-size: 1.5rem;
+    color: #e0e0e0;
+    margin-bottom: 40px;
+    max-width: 1000px;
+    line-height: 1.6;
+    transition: color 0.3s ease; /* Added transition for smooth color change */
+    text-align: center; /* Justified text for better readability */
+}
+
+.countdown {
+    background: rgba(18, 18, 18, 0.9);
+    padding: 50px 80px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease; /* Added transition for smooth scaling */
+    animation: fadeIn 1s; /* Added fade-in animation */
+}
+
+.countdown:hover {
+    transform: scale(1.05); /* Added hover effect for countdown */
+}
+
+.countdown p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #00ff87;
+    font-weight: bold; /* Made countdown text bold */
+}
+
+#timer {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+#timer span {
+    font-size: 2rem;
+    font-weight: 600;
+    background: linear-gradient(45deg, #00ff87, #60efff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0 10px;
+    transition: transform 0.3s ease; /* Added transition for smooth scaling */
+    border: 2px solid #00ff87; /* Added border to timer spans */
+    border-radius: 10px; /* Rounded corners for timer spans */
+}
+
+#timer span:hover {
+    transform: scale(1.1); /* Added hover effect for timer spans */
+}
+
+#timer span::after {
+    content: attr(data-label);
+    display: block;
+    font-size: 0.8rem;
+    font-weight: normal;
+    color: #e0e0e0;
+    margin-top: 5px;
+}
+
+/* Animations */
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .coming-soon-container h1 {
+        font-size: 2.5rem;
+    }
+    
+    .countdown {
+        padding: 20px;
+    }
+    
+    #timer {
+        gap: 10px;
+    }
+    
+    #timer span {
+        font-size: 1.5rem;
+    }
+} 
